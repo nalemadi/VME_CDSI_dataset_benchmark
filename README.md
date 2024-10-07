@@ -50,4 +50,5 @@ To combine the train-val-test splits from each dataset to construct CDSI splits,
 pyodi coco merge SPLIT_A.json SPLIT_B.json SPLIT_A_B.json
 ```
 
-__The benchmark scripts will be released soon! stay tuned!__
+>[!NOTE]
+__The benchmark scripts will be released soon! Stay Tuned!__
