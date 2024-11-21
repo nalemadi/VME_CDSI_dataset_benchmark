@@ -8,7 +8,7 @@ pip install -r requirements.txt
 ```
 
 ## CDSI Dataset preparation
-For using the VME dataset, both YOLO and MS-COCO formats are available with the desired splits.
+For using the VME dataset, both OBB (YOLO) and HBB (MS-COCO) formats are available with the desired splits. VME images and annotations are available at XXX.
 
 In order to build the CDSI dataset, you need to follow the steps below:
 
