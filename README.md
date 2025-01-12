@@ -1,5 +1,17 @@
 # VME: A Satellite Imagery Dataset and Benchmark for Detecting Vehicles in the Middle East and Beyond
 
+## VME Dataset
+VME is a satellite imagery dataset built for vehicle detection in the Middle East. VME images and their associated annotations can be used for academic purposes only.  satellite_images folder is under CC BY-NC-ND 4.0 license, whereas the rest of folders (annotations_HBB, annotations_OBB, CDSI_construction_scripts) are under CC BY 4.0 license.
+
+You can find 
+VME_CDSI_datasets.zip has four components:
+
+1- annotations_OBB: It holds TXT files in YOLO format with Oriented Bounding Box (OBB) annotations. Each annotation file is named after the corresponding image name
+2- annotations_HBB: This component contains HBB annotation files in JSON file formatted in MS-COCO format defined by four values in pixels (x_min, y_min, width, height) of training, validation, and test splits 
+3- satellite_images: This folder consists of VME images of size 512x512 in PNG format
+4- CDSI_construction_scripts: This directory comprises all instructions needed to build the CDSI dataset, in detail: a) instructions for downloading each dataset from its repository, b) The conversion to MS-COCO format script for each dataset is under the dataset name folder, c) The combination instructions. The training, validation, and test splits are available under "CDSI_construction_scripts/data_utils" folder.
+
+Components 1,2,4 can be found in this repository. The VME images are available in the Zenodo repository with the other components.
 
 ## Environment Setup for data preparation and preprocessing
 
