@@ -3,15 +3,17 @@
 ## VME Dataset
 VME is a satellite imagery dataset built for vehicle detection in the Middle East. VME images and their associated annotations can be used for **academic purposes only**.  **satellite_images** folder is under [**CC BY-NC-ND 4.0 license**](https://creativecommons.org/licenses/by-nc-nd/4.0/), whereas the rest of folders **(annotations_HBB, annotations_OBB, CDSI_construction_scripts)** are under [**CC BY 4.0 license**](https://creativecommons.org/licenses/by/4.0/).
 
-You can find 
-VME_CDSI_datasets.zip has four components:
+This repository consists of:
+1. VME_annotations, which has:
+   * annotations_OBB: It holds TXT files in YOLO format with Oriented Bounding Box (OBB) annotations. Each annotation file is named after the corresponding image name.
+   * annotations_HBB: This component contains HBB annotation files in JSON file formatted in MS-COCO format defined by four values in pixels (x_min, y_min, width, height) of training, validation, and test splits.
+   * satellite_images: This folder consists of VME images of size 512x512 in PNG format. (**The VME images are available in the Zenodo repository**)
+2. CDSI_construction_scripts: This directory comprises all instructions needed to build the CDSI dataset, in detail: a) instructions for downloading each dataset from its repository, b) The conversion to MS-COCO format script for each dataset is under the dataset name folder, c) The combination instructions. The training, validation, and test splits are available under "CDSI_construction_scripts/data_utils" folder.
 
-1. annotations_OBB: It holds TXT files in YOLO format with Oriented Bounding Box (OBB) annotations. Each annotation file is named after the corresponding image name.
-2. annotations_HBB: This component contains HBB annotation files in JSON file formatted in MS-COCO format defined by four values in pixels (x_min, y_min, width, height) of training, validation, and test splits.
-3. satellite_images: This folder consists of VME images of size 512x512 in PNG format.
-4. CDSI_construction_scripts: This directory comprises all instructions needed to build the CDSI dataset, in detail: a) instructions for downloading each dataset from its repository, b) The conversion to MS-COCO format script for each dataset is under the dataset name folder, c) The combination instructions. The training, validation, and test splits are available under "CDSI_construction_scripts/data_utils" folder.
+>[!NOTE]
+__All the components, in addition to satellite_images, are available in Zenodo repository__
 
-Components: annotations_HBB, annotations_OBB, CDSI_construction_scripts are available in this repository. The VME images are available in the Zenodo repository with the other components.
+
 
 ## Environment Setup for data preparation and preprocessing
 
@@ -64,3 +66,4 @@ pyodi coco merge SPLIT_A.json SPLIT_B.json SPLIT_A_B.json
 
 >[!NOTE]
 __The benchmark scripts will be released soon! Stay Tuned!__
+
