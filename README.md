@@ -7,11 +7,12 @@ This repository consists of:
 1. VME_annotations, which has:
    * annotations_OBB: It holds TXT files in YOLO format with Oriented Bounding Box (OBB) annotations. Each annotation file is named after the corresponding image name.
    * annotations_HBB: This component contains HBB annotation files in JSON file formatted in MS-COCO format defined by four values in pixels (x_min, y_min, width, height) of training, validation, and test splits.
-   * satellite_images: This folder consists of VME images of size 512x512 in PNG format. (**The VME images are available in the Zenodo repository**)
+   * satellite_images: This folder consists of VME images of size 512x512 in PNG format. (**The VME images are available in the [Zenodo repository](https://zenodo.org/records/14185684)**)
 2. CDSI_construction_scripts: This directory comprises all instructions needed to build the CDSI dataset, in detail: a) instructions for downloading each dataset from its repository, b) The conversion to MS-COCO format script for each dataset is under the dataset name folder, c) The combination instructions. The training, validation, and test splits are available under "CDSI_construction_scripts/data_utils" folder.
 
+
 >[!NOTE]
-__All the components, in addition to satellite_images, are available in Zenodo repository__
+__All the components, in addition to satellite_images, are available in [Zenodo repository](https://zenodo.org/records/14185684)__
 
 
 
