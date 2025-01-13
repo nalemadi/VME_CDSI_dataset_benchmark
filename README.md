@@ -1,4 +1,22 @@
 # VME: A Satellite Imagery Dataset and Benchmark for Detecting Vehicles in the Middle East and Beyond
+This is the official repository for the paper *"VME: A Satellite Imagery Dataset and Benchmark for Detecting Vehicles in the Middle East and Beyond"*, Which is accepted in Scientific Data - Data Scriptor in January 2025.
+
+#### Authors
+[Noora Al-Emadi](https://orcid.org/0000-0003-4137-6082), Qatar Computing Research Institute, Hamad Bin Khalifa University
+
+[Ingmar Weber](https://orcid.org/0000-0003-4169-2579), Saarland Informatics Campus, Saarland University
+
+[Yin Yang](https://orcid.org/0000-0002-0549-3882), College of Science and Engineering, Hamad Bin Khalifa University
+
+[Ferda Ofli](https://orcid.org/0000-0003-3918-3230), Qatar Computing Research Institute, Hamad Bin Khalifa University
+
+## Abstract
+Detecting vehicles in satellite images is crucial for traffic management, urban planning, and disaster response. However, current models struggle with real-world diversity, particularly across different regions. This challenge is amplified by geographic bias in existing datasets, which often focus on specific areas and overlook regions like the Middle East. To address this gap, we present the Vehicles in the Middle East (VME) dataset, designed explicitly for vehicle detection in high-resolution satellite images from Middle Eastern countries. Sourced from Maxar, the VME dataset spans 54 cities across 12 countries, comprising over 4,000 image tiles and more than 100,000 vehicles, annotated using both manual and semi-automated methods. Additionally, we introduce the largest benchmark dataset for Car Detection in Satellite Imagery (CDSI), combining images from multiple sources to enhance global car detection. Our experiments demonstrate that models trained on existing datasets perform poorly on Middle Eastern images, while the VME dataset significantly improves detection accuracy in this region. Moreover, state-of-the-art models trained on CDSI achieve substantial improvements in global car detection.
+
+
+<img width="1144" alt="figure1" src="https://github.com/user-attachments/assets/95060606-4209-4757-a3f6-73eab271a5bf" />
+<h6> The distinct visual context of cars on the road in the Middle Eastern cities: a) Abu Kamal, Syria, and b) Alexandria, Egypt & other cities around the world: c) Sydney, Australia, and d) Mexico City, Mexico.</h6>
+
 
 ## VME Dataset
 VME is a satellite imagery dataset built for vehicle detection in the Middle East. VME images and their associated annotations can be used for **academic purposes only**.  **satellite_images** folder is under [**CC BY-NC-ND 4.0 license**](https://creativecommons.org/licenses/by-nc-nd/4.0/), whereas the rest of folders **(annotations_HBB, annotations_OBB, CDSI_construction_scripts)** are under [**CC BY 4.0 license**](https://creativecommons.org/licenses/by/4.0/).
@@ -23,7 +41,7 @@ pip install -r requirements.txt
 ```
 
 ## CDSI Dataset preparation
-For using the VME dataset, both OBB (YOLO) and HBB (MS-COCO) formats are available with the desired splits. VME images and annotations are available at XXX.
+For using the VME dataset, both OBB (YOLO) and HBB (MS-COCO) formats are available with the desired splits. VME images and annotations are available in [Zenodo repository](https://zenodo.org/records/14185684).
 
 In order to build the CDSI dataset, you need to follow the steps below:
 
@@ -40,7 +58,7 @@ In order to build the CDSI dataset, you need to follow the steps below:
 
 a. After installing some datasets, it's recommended to put all images under one directory and all annotations under one directory, to ease the MS-COCO conversion
 
-b. To generate SPLIT_FILE.txt for each setup (original|CDSI_other|CDSI), run this command under each dataset directory (example for car setup):
+b. To generate SPLIT_FILE.txt for each setup (original | CDSI_other | CDSI), run this command under each dataset directory (example for car setup):
 
 ```bash
 grep 'xview' CDSI_train.txt > xview_car_train.txt
@@ -67,4 +85,12 @@ pyodi coco merge SPLIT_A.json SPLIT_B.json SPLIT_A_B.json
 
 >[!NOTE]
 __The benchmark scripts will be released soon! Stay Tuned!__
+
+
+[comment]: # "## Result"
+
+
+[comment]: # "## Citation"
+[comment]: # "If you found our project helpful, please cite our paper:"
+[comment]: # "```bash"
 
