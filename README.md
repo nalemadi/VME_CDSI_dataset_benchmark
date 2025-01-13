@@ -1,5 +1,5 @@
 # VME: A Satellite Imagery Dataset and Benchmark for Detecting Vehicles in the Middle East and Beyond
-This is the official repository for the paper *"VME: A Satellite Imagery Dataset and Benchmark for Detecting Vehicles in the Middle East and Beyond"*, Which is accepted in Scientific Data - Data Scriptor in January 2025.
+This is the official repository for the paper *"VME: A Satellite Imagery Dataset and Benchmark for Detecting Vehicles in the Middle East and Beyond"*, Which is accepted in Nature Scientific Data, January 2025.
 
 #### Authors
 [Noora Al-Emadi](https://orcid.org/0000-0003-4137-6082), Qatar Computing Research Institute, Hamad Bin Khalifa University
@@ -19,7 +19,7 @@ Detecting vehicles in satellite images is crucial for traffic management, urban 
 
 
 ## VME Dataset
-VME is a satellite imagery dataset built for vehicle detection in the Middle East. VME images and their associated annotations can be used for **academic purposes only**.  **satellite_images** folder is under [**CC BY-NC-ND 4.0 license**](https://creativecommons.org/licenses/by-nc-nd/4.0/), whereas the rest of folders **(annotations_HBB, annotations_OBB, CDSI_construction_scripts)** are under [**CC BY 4.0 license**](https://creativecommons.org/licenses/by/4.0/).
+Vehicles in the Middle East (VME) is a satellite imagery dataset built for vehicle detection in the Middle East. VME images and their associated annotations can be used for **academic purposes only**.  VME images (**satellite_images** folder) are under [**CC BY-NC-ND 4.0 license**](https://creativecommons.org/licenses/by-nc-nd/4.0/) and available for download on [Zenodo repository](https://zenodo.org/records/14185684), we also release VME ground-truth annotations and the scripts associated for constructing CDSI **(annotations_HBB, annotations_OBB, CDSI_construction_scripts)** under [**CC BY 4.0 license**](https://creativecommons.org/licenses/by/4.0/) which are available on [Zenodo repository](https://zenodo.org/records/14185684) and here.
 
 This repository consists of:
 1. VME_annotations, which has:
@@ -29,11 +29,6 @@ This repository consists of:
 2. CDSI_construction_scripts: This directory comprises all instructions needed to build the CDSI dataset, in detail: a) instructions for downloading each dataset from its repository, b) The conversion to MS-COCO format script for each dataset is under the dataset name folder, c) The combination instructions. The training, validation, and test splits are available under "CDSI_construction_scripts/data_utils" folder.
 
 
->[!NOTE]
-__All the components, in addition to satellite_images, are available in [Zenodo repository](https://zenodo.org/records/14185684)__
-
-
-
 ## Environment Setup for data preparation and preprocessing
 
 ```bash
@@ -41,7 +36,7 @@ pip install -r requirements.txt
 ```
 
 ## CDSI Dataset preparation
-For using the VME dataset, both OBB (YOLO) and HBB (MS-COCO) formats are available with the desired splits. VME images and annotations are available in [Zenodo repository](https://zenodo.org/records/14185684).
+For using the VME dataset, both OBB (YOLO) and HBB (MS-COCO) formats are available with the desired splits.
 
 In order to build the CDSI dataset, you need to follow the steps below:
 
