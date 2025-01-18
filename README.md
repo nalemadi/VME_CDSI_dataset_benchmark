@@ -1,3 +1,5 @@
+<p align="center"><img width="200" height="240" alt="logo-color-small" src="https://github.com/user-attachments/assets/feffd7e6-d55e-4f15-9f35-eb5f04f73f23"/></p>
+
 # VME: A Satellite Imagery Dataset and Benchmark for Detecting Vehicles in the Middle East and Beyond
 This is the official repository for the paper *"VME: A Satellite Imagery Dataset and Benchmark for Detecting Vehicles in the Middle East and Beyond"*, Which is accepted in Nature Scientific Data, January 2025.
 
@@ -17,8 +19,8 @@ Detecting vehicles in satellite images is crucial for traffic management, urban 
 <img width="1144" alt="figure1" src="https://github.com/user-attachments/assets/95060606-4209-4757-a3f6-73eab271a5bf" />
 <h6> The distinct visual context of cars on the road in the Middle Eastern cities: a) Abu Kamal, Syria, and b) Alexandria, Egypt & other cities around the world: c) Sydney, Australia, and d) Mexico City, Mexico.</h6>
 
-
 ## VME Dataset
+
 Vehicles in the Middle East (VME) is a satellite imagery dataset built for vehicle detection in the Middle East. VME images and their associated annotations can be used for **academic purposes only**.  VME images (**satellite_images** folder) are under [**CC BY-NC-ND 4.0 license**](https://creativecommons.org/licenses/by-nc-nd/4.0/) and available for download on [Zenodo repository](https://zenodo.org/records/14185684), we also release VME ground-truth annotations and the scripts associated for constructing CDSI **(annotations_HBB, annotations_OBB, CDSI_construction_scripts)** under [**CC BY 4.0 license**](https://creativecommons.org/licenses/by/4.0/) which are available on [Zenodo repository](https://zenodo.org/records/14185684) and here.
 
 This repository consists of:
