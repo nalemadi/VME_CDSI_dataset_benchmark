@@ -21,13 +21,17 @@ Detecting vehicles in satellite images is crucial for traffic management, urban 
 
 ## VME Dataset
 
-Vehicles in the Middle East (VME) is a satellite imagery dataset built for vehicle detection in the Middle East. VME images and their associated annotations can be used for **academic purposes only**.  VME images (**satellite_images** folder) are under [**CC BY-NC-ND 4.0 license**](https://creativecommons.org/licenses/by-nc-nd/4.0/) and available for download on [Zenodo repository](https://zenodo.org/records/14185684), we also release VME ground-truth annotations and the scripts associated for constructing CDSI **(annotations_HBB, annotations_OBB, CDSI_construction_scripts)** under [**CC BY 4.0 license**](https://creativecommons.org/licenses/by/4.0/) which are available on [Zenodo repository](https://zenodo.org/records/14185684) and here.
+Vehicles in the Middle East (VME) is a satellite imagery dataset built for vehicle detection in the Middle East. 
+
+[comment]: # "VME images and their associated annotations can be used for **academic purposes only**." 
+
+VME images (**satellite_images** folder) are under [**CC BY-NC-ND 4.0 license**](https://creativecommons.org/licenses/by-nc-nd/4.0/) and available for download on [**Zenodo repository**](https://zenodo.org/records/14185684), we also release VME ground-truth annotations and the scripts associated for constructing CDSI **(annotations_HBB, annotations_OBB, CDSI_construction_scripts)** under [**CC BY 4.0 license**](https://creativecommons.org/licenses/by/4.0/) which are available on [**Zenodo repository**](https://zenodo.org/records/14185684) and here.
 
 This repository consists of:
 1. VME_annotations, which has:
    * annotations_OBB: It holds TXT files in YOLO format with Oriented Bounding Box (OBB) annotations. Each annotation file is named after the corresponding image name.
    * annotations_HBB: This component contains HBB annotation files in JSON file formatted in MS-COCO format defined by four values in pixels (x_min, y_min, width, height) of training, validation, and test splits.
-   * satellite_images: This folder consists of VME images of size 512x512 in PNG format. (**The VME images are available in the [Zenodo repository](https://zenodo.org/records/14185684)**)
+   * satellite_images: This folder consists of VME images of size 512x512 in PNG format. (**The VME images are available in the [**Zenodo repository**](https://zenodo.org/records/14185684)**)
 2. CDSI_construction_scripts: This directory comprises all instructions needed to build the CDSI dataset, in detail: a) instructions for downloading each dataset from its repository, b) The conversion to MS-COCO format script for each dataset is under the dataset name folder, c) The combination instructions. The training, validation, and test splits are available under "CDSI_construction_scripts/data_utils" folder.
 
 
@@ -90,4 +94,5 @@ __The benchmark scripts will be released soon! Stay Tuned!__
 [comment]: # "## Citation"
 [comment]: # "If you found our project helpful, please cite our paper:"
 [comment]: # "```bash"
+
 
