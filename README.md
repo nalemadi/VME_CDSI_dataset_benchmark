@@ -87,7 +87,20 @@ pyodi coco merge SPLIT_A.json SPLIT_B.json SPLIT_A_B.json
 >[!NOTE]
 __The benchmark scripts will be released soon! Stay Tuned!__
 
-
+## Citation
+```bash
+@article{alemadi2025vme,
+  title={{VME: A Satellite Imagery Dataset and Benchmark for Detecting Vehicles in the Middle East and Beyond}},
+  author={Alemadi, Noora and Weber, Ingmar and Yang, Yin and Ofli, Ferda},
+  journal={Scientific Data},
+  volume={},
+  number={1},
+  pages={},
+  year={2025},
+  publisher={Spring Nature},
+  note={to appear}
+}
+```
 [comment]: # "## Result"
 
 
