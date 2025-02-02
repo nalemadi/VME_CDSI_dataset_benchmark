@@ -91,7 +91,7 @@ __The benchmark scripts will be released soon! Stay Tuned!__
 ```bash
 @article{alemadi2025vme,
   title={{VME: A Satellite Imagery Dataset and Benchmark for Detecting Vehicles in the Middle East and Beyond}},
-  author={Alemadi, Noora and Weber, Ingmar and Yang, Yin and Ofli, Ferda},
+  author={Al-Emadi, Noora and Weber, Ingmar and Yang, Yin and Ofli, Ferda},
   journal={Scientific Data},
   volume={},
   number={1},
