@@ -84,6 +84,11 @@ To combine the train-val-test splits from each dataset to construct CDSI splits,
 pyodi coco merge SPLIT_A.json SPLIT_B.json SPLIT_A_B.json
 ```
 
+## CDSI Model
+
+Our CDSI model can be downloaded from [**HuggingFace Page**](https://huggingface.co/HumAI-DisplacementMonitoring/CDSI_model)
+
+
 >[!NOTE]
 __The benchmark scripts will be released soon! Stay Tuned!__
 
