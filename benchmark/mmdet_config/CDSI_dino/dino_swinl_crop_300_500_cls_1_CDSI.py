@@ -2,7 +2,7 @@ _base_ = ["../dino/dino-5scale_swin-l_8xb2-36e_coco.py"]
 
 
 EXP_NAME = "dino_swinl_crop_300_500_cls_1_car"
-DATA_ROOT = "data/CDSI_v2/"
+DATA_ROOT = "data/CDSI/"
 BATCH_MULTIPLIER = 1
 NUM_CLASSES = 1
 
